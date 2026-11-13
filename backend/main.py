@@ -6,7 +6,7 @@ import asyncio
 import logging
 import hashlib
 import time
-
+from prometheus_fastapi_instrumentator import Instrumentator
 import pymupdf
 from dotenv import load_dotenv
 from google import genai
@@ -124,6 +124,7 @@ app = FastAPI(
     description="AI-powered Resume Analysis API",
     version="2.0.0"
 )
+Instrumentator().instrument(app).expose(app)
 
 app.add_middleware(
     CORSMiddleware,
