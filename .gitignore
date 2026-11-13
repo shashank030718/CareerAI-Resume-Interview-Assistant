@@ -1,0 +1,24 @@
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+client/node_modules/
+
+# Build output
+client/dist/
+
+# Uploaded files
+uploads/
+
+# IDE
+.vscode/

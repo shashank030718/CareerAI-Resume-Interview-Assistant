@@ -1,0 +1,304 @@
+
+.resume-page {
+  color: var(--text);
+}
+
+.resume-heading {
+  margin-bottom: 28px;
+}
+
+.resume-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.resume-heading h1 {
+  font-size: 29px;
+  margin: 12px 0 8px;
+}
+
+.resume-heading p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.resume-upload-card,
+.candidate-card,
+.result-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.resume-upload-card {
+  max-width: 800px;
+}
+
+.upload-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.resume-upload-icon,
+.dropzone-icon {
+  background: #eeeaff;
+  color: #6655dc;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.upload-heading h2 {
+  font-size: 17px;
+  margin: 0 0 5px;
+}
+
+.upload-heading p,
+.privacy-note {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 0;
+}
+
+.resume-dropzone {
+  border: 2px dashed #c9c1f5;
+  background: #faf9ff;
+  border-radius: 13px;
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dark .resume-dropzone {
+  background: #25243a;
+  border-color: #6357a2;
+}
+
+.resume-dropzone:hover {
+  border-color: #6655dc;
+}
+
+.dropzone-icon {
+  margin-bottom: 10px;
+}
+
+.resume-dropzone h3 {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.resume-dropzone p {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 5px;
+}
+
+.resume-dropzone span {
+  color: #6655dc;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 17px;
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--primary);
+}
+
+.selected-file div {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.selected-file strong {
+  color: var(--text);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.selected-file span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.selected-file button {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.analyze-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  background: #6655dc;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.analyze-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.analyze-button:not(:disabled):hover {
+  background: #5140c1;
+}
+
+.privacy-note {
+  text-align: center;
+  margin-top: 13px;
+}
+
+.resume-error,
+.result-success {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px;
+  border-radius: 9px;
+  margin-top: 17px;
+  font-size: 13px;
+}
+
+.resume-error {
+  background: #fff0f0;
+  color: #c53d3d;
+}
+
+.result-success {
+  background: #e9f9ef;
+  color: #21834c;
+  margin: 20px 0;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.analysis-results {
+  margin-top: 35px;
+}
+
+.candidate-card {
+  margin-bottom: 30px;
+}
+
+.result-label {
+  font-size: 10px;
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.candidate-card h2 {
+  font-size: 23px;
+  margin: 12px 0;
+}
+
+.candidate-card p,
+.result-card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.result-section {
+  margin: 30px 0;
+}
+
+.result-section > h2 {
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.result-card h3 {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+
+.result-card h4 {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags span {
+  padding: 7px 11px;
+  background: #eeeaff;
+  color: #6655dc;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.analysis-list {
+  padding-left: 19px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.empty-text {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-upload-card {
+    padding: 16px;
+  }
+}
